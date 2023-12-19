@@ -61,6 +61,7 @@ public class UserController {
      * Bing AI 建議的。
      */
     // 留言功能，帳號從 session 拿，所以這裡傳遞的 parameter 只有 留言內容(comment) 而已
+    // test
     @PostMapping(value = "/users/currentUser/comment")
     @ApiOperation(value = "留言功能", notes = " 需要登入才能使用，否則會 return 401 ")
     public ResponseEntity<?> comment(HttpSession session,
