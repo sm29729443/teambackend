@@ -1,0 +1,10 @@
+UserController miro 路徑 = https://miro.com/welcomeonboard/d3J1WEhYYXh1Zk1RaldZZTY2U1cxUDUyNTRUcXNjYmRvc0pPTjJ2aTdkYjVYQXB4RDhrZ0dEa3ZMb0VXSFY4SHwzNDU4NzY0NTY4NDQzNDkyODMzfDI=?share_link_id=853167367921
+
+用戶資料庫
+CREATE TABLE users (
+user_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL COMMENT '名稱',
+email VARCHAR(255) NOT NULL UNIQUE  COMMENT '信箱,一個信箱只能註冊一次',
+password VARCHAR(255) NOT NULL COMMENT '密碼',
+role VARCHAR(30) NOT NULL COMMENT '權限'
+)
